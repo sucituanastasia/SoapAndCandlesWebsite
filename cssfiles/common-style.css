@@ -1,0 +1,320 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Work sans", sans-serif;
+}
+/*---------------SECTION HERO--------------*/
+.first-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2% 4%;
+    background-color:#000;
+}
+.first-header a{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+.first-header span{
+    margin-right: 80px;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#000;
+    padding: 0px 3%;
+    width: 100%;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 15px;
+    width: 15%;
+}
+nav ul li a{
+    text-decoration: none;
+}
+nav ul li a:hover{
+    border-bottom:2px solid #fff;
+}
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 7%;
+    background-color:#000;
+}
+.search span input{
+    border: 1px solid #fff;
+}
+.search span input:hover{
+    color: white;
+}
+figure img{
+    margin-left:-20%;
+}
+.fa-heart,.fa-bag-shopping{
+    transition: transform 0.3s ease;
+    transform: translateX(0px);
+}
+.fa-bag-shopping:hover{
+    transform: translateX(10px);
+}
+.fa-heart:hover{
+    transform: translateX(10px);
+}
+
+/*----------FINISH-SECTION-HERO-------------*/
+
+/*------START-CONTACT-FORM--------------*/
+.contactForm{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    /*background-color: #E6B0AA;*/
+    margin-bottom: 5%;
+}
+form{
+    /*background-color: #9AC2C9;*/
+    padding: 30px;
+    width: 80%;
+    max-width: 1000px;
+    font-size: 17px;
+}
+.inputBox{
+    margin-bottom: 35px;
+    position: relative;
+}
+input, textarea{
+    width: 100%;
+    padding: 5px;
+    outline: 0;
+    border: none;
+    border-bottom: 1px solid #000;
+    background-color: transparent;
+}
+.inputBox span input{
+    width: 40%;
+    padding: 15px;
+    outline: none;
+    border: 2px solid #000;
+    background-color: #000;
+    color:#fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 100;
+    transition: 0.15s;
+}
+.inputBox span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputBox span input:hover{
+    background-color: transparent;
+    color:#000;
+    opacity: 0.8;
+}
+label{
+    height: 100%;
+    /*background-color: #8AA1B1;*/
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 3px;
+    color: #000;
+    cursor: text;
+    transition: 0.2s;
+}
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    top: -35px;
+    font-size: 14px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row .inputBox{
+    flex-basis: 48%;
+}
+.content-form{
+    margin: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.content-form p{
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+.content-form h2{
+    font-size: 30px;
+}
+/*------FINISH-CONTACT-FORM--------------*/
+/*---------START-CONTACT-ZONE--------*/
+.first-zone-logo{
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+.main-content{
+    background-color: #000;
+    color: #fff;
+}
+.main-content h3{
+    padding: 5px;
+    text-align: center;
+    font-size: 15px;
+}
+.main-content p{
+    padding: 2px;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+.content-contact{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    background-color:  #fff;
+    position: absolute;
+    margin-top: -25%;
+    width: 70%;
+    padding: 20px;
+}
+/*---------ZONE4------------*/
+.first-zone-logo4{
+    background-color:#000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    margin-top: -20px;
+}
+.follow{
+    align-items: center;
+    color: white;
+}
+.form-zone4 span input{
+    border:none;
+    border-bottom: 3px solid #fff;
+    /*background-color: aquamarine;*/
+    width: 400px;
+}
+.form-zone4 span input:hover{
+    border:2px solid #fff;
+    color: white;
+}
+.form-zone4{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /*background-color: #f1c0e8;*/
+}
+::placeholder{
+    color: #fff;
+    padding: 3px;
+}
+.button-follow span input{
+    width: 70px;
+    color: white;
+    transition: 0.15s;
+}
+.button-follow span input:hover{
+    background-color: transparent;
+    border:none;
+    opacity: 0.8;
+}
+.enter-email-zone input:focus{
+    background-color: #6c757d;
+    border:2px solid #fff;
+}
+/*---------FINISH-CONTACT-ZONE--------*/
+/*---------START-SOCIAL-MEDIA--------*/
+.first-zone-logo-social{
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    margin-top: -29px;
+}
+.face, .insta, .tik, .linkedin, a{
+   background-color: #000;
+   text-decoration: none;
+   color: white;
+   font-size: 14px;
+   padding: 0px 20px;
+   transition: 0.15s;
+}
+.social-media{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.linkedin:hover{
+    border-bottom: 2px solid #fff;
+    opacity: 0.8;
+ }
+ .tik:hover{
+    border-bottom: 2px solid #fff;
+    opacity: 0.8;
+ }
+ .insta:hover{
+    border-bottom: 2px solid #fff;
+    opacity: 0.8;
+ }
+ .face:hover{
+    border-bottom: 2px solid #fff;
+    opacity: 0.8;
+ }
+/*---------FINISH-SOCIAL-MEDIA--------*/
+/*----------START-FOOTER------------------*/
+footer{
+    background-color: #000;
+    margin-top: 5px;
+    color: #fff;
+    font-size: 12px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 10px;
+}
+.term-of-use{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 30%;
+}
+.term-of-use p{
+    padding: 0px 50px;
+}
+/*----------FINISH-FOOTER-----------------*/
+/*------------CARD PRODUCTS---------------*/
+.blog-heading{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 80px;
+    margin-left: 4.5%;
+}
+.blog-heading span{
+    color:#eaac8b;
+    font-size: 1.5rem;
+}
+.blog-heading h3{
+    font-size: 2.4rem;
+    color:#000;
+    font-weight:600;
+}
